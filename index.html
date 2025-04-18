@@ -1,86 +1,125 @@
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Broment Token</title>
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Broment Token | BRM</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #fff;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
       color: #333;
-      text-align: center;
     }
     header {
-      background-color: #ffffff;
-      padding: 20px;
+      background: #5e35b1;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      position: relative;
     }
     header img {
-      width: 80px;
-      display: block;
-      margin: 0 auto;
+      width: 100px;
+      margin-bottom: 1rem;
     }
-    header h1 {
-      margin-top: 10px;
-      color: #5f27cd;
+    .lang-toggle {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: white;
+      color: #5e35b1;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 5px;
     }
     section {
-      padding: 40px 20px;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
     }
-    .purple-section {
-      background-color: #5f27cd;
+    .cta-button {
+      background-color: #7e57c2;
       color: white;
-    }
-    .button {
-      display: inline-block;
-      background-color: #7f38f2;
-      color: white;
-      padding: 12px 24px;
-      margin: 10px;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
       text-decoration: none;
-      border-radius: 6px;
+      display: inline-block;
+      margin: 1rem;
     }
     footer {
-      background-color: #f2f2f2;
-      padding: 20px;
-      font-size: 14px;
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 2rem;
+    }
+    .ar {
+      direction: rtl;
+      text-align: right;
+      display: none;
+    }
+    .en {
+      display: block;
     }
   </style>
-</head><body>
+  <script>
+    function toggleLang() {
+      const en = document.querySelector('.en');
+      const ar = document.querySelector('.ar');
+      if (en.style.display === 'none') {
+        en.style.display = 'block';
+        ar.style.display = 'none';
+      } else {
+        en.style.display = 'none';
+        ar.style.display = 'block';
+      }
+    }
+  </script>
+</head>
+<body>
   <header>
-    <img src="Logo.png" alt="Broment Logo">
-    <h1>Broment</h1>
-  </header>  <section class="purple-section">
-    <h2>Broment Token (BRM)</h2>
-    <p>The future of stable and competitive cryptocurrency on the Polygon network.</p>
-  </section>  <section>
+    <button class="lang-toggle" onclick="toggleLang()">العربية | English</button>
+    <img src="logo.png" alt="Broment Logo">
+    <h1>Broment Token</h1>
+    <p>The future of stable and competitive crypto.</p>
+  </header>  <section class="en">
     <h2>Welcome to Broment</h2>
-    <p>Broment is a decentralized token built on the Polygon blockchain, aiming to provide financial stability, ease of access, and long-term value through innovative technology and transparent growth.</p>
-  </section>  <section>
-    <h2>About Broment</h2>
-    <p>BRM is designed for users seeking a reliable and efficient crypto experience. With a strong roadmap and dedicated development, it aims to empower the community through smart blockchain use.</p>
-  </section>  <section>
-    <h2>Roadmap</h2>
-    <p><strong>Q2 2025:</strong> Token Launch on Polygon, Website Launch</p>
-    <p><strong>Q3 2025:</strong> Listing on QuickSwap, Whitepaper Release</p>
-    <p><strong>Q4 2025:</strong> Marketing Campaign, Community Building</p>
-    <p><strong>Q1 2026:</strong> Staking & Rewards System, New Partnerships</p>
-  </section>  <section>
-    <h2>FAQ</h2>
-    <p><strong>What is Broment?</strong><br>Broment is a Polygon-based token for stability and competitive growth.</p>
-    <p><strong>Where can I buy BRM?</strong><br>You can purchase BRM on QuickSwap.</p>
-    <p><strong>What is the supply?</strong><br>1,000,000 BRM with 18 decimals.</p>
-  </section>  <section>
-    <h2>Our Team</h2>
-    <p>We are a group of blockchain enthusiasts, developers, and designers committed to building a sustainable and fair token economy.</p>
-  </section>  <section id="contact" style="background-color: #f1f1f1;">
-    <h2>Follow Us</h2>
-    <p>Stay connected with Broment on social media</p>
-    <p>
-      <a href="https://twitter.com/your_handle" target="_blank">Twitter</a> |
-      <a href="https://t.me/your_group" target="_blank">Telegram</a> |
-      <a href="mailto:broment@hotmail.com">Email</a>
-    </p>
+    <p>Broment is a decentralized token built on Polygon, aiming to provide stability and long-term value through transparent growth and technology.</p>
+    <a class="cta-button" href="https://quickswap.exchange" target="_blank">Buy BRM</a>
+    <a class="cta-button" href="whitepaper.html" target="_blank">View Whitepaper</a>
+    <h3>Roadmap</h3>
+    <ul>
+      <li>Q2 2025: Token Launch</li>
+      <li>Q3 2025: Listing and Whitepaper</li>
+      <li>Q4 2025: Marketing & Community</li>
+    </ul>
+    <h3>Team</h3>
+    <p>Our team includes blockchain developers, designers, and marketers committed to delivering transparent and secure crypto experiences.</p>
+    <h3>FAQ</h3>
+    <p><strong>What is Broment?</strong> Broment is a Polygon-based token focused on stability and utility.</p>
+    <p><strong>Where can I trade BRM?</strong> On QuickSwap.</p>
+  </section>  <section class="ar">
+    <h2>مرحبًا بكم في Broment</h2>
+    <p>Broment هي عملة لامركزية على شبكة Polygon، تهدف لتوفير الاستقرار والقيمة طويلة الأمد من خلال التكنولوجيا والنمو الشفاف.</p>
+    <a class="cta-button" href="https://quickswap.exchange" target="_blank">شراء BRM</a>
+    <a class="cta-button" href="whitepaper.html" target="_blank">عرض الورقة البيضاء</a>
+    <h3>خريطة الطريق</h3>
+    <ul>
+      <li>الربع 2 - 2025: إطلاق العملة</li>
+      <li>الربع 3 - 2025: إدراج وإصدار الورقة البيضاء</li>
+      <li>الربع 4 - 2025: تسويق وبناء المجتمع</li>
+    </ul>
+    <h3>فريق العمل</h3>
+    <p>يتكون فريقنا من مطوري بلوكتشين ومصممين ومسوقين ملتزمين بتقديم تجربة تشفير شفافة وآمنة.</p>
+    <h3>الأسئلة الشائعة</h3>
+    <p><strong>ما هي Broment؟</strong> عملة مشفرة على Polygon تركز على الاستقرار والفائدة.</p>
+    <p><strong>أين يمكنني تداول BRM؟</strong> عبر QuickSwap.</p>
   </section>  <footer>
     &copy; 2025 Broment. All rights reserved.
   </footer>
-</body></html>
+</body>
+</html>
