@@ -1,24 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Broment Whitepaper</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-    }
-    iframe {
-      width: 100%;
-      height: 100vh;
-      border: none;
-    }
-  </style>
-</head>
-<body>
-  <iframe src="whitepaper.pdf"></iframe>
-</body>
-</html>
+<section id="whitepaper" style="text-align: center; padding: 40px 20px;">
+  <h2>Whitepaper</h2>
+  <p>You can view or download the Broment whitepaper in English and Arabic.</p>
+  <a href="whitepaper/Broment-Whitepaper-EN-AR.pdf" download style="display: inline-block; padding: 12px 24px; background-color: #6A0DAD; color: white; border-radius: 8px; text-decoration: none; font-weight: bold;">Download Whitepaper</a>
+</section>
