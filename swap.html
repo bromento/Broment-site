@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Broment Token (BRM)</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #333;
+    }
+    header {
+      background-color: #5c2dab;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    header img {
+      width: 60px;
+      height: auto;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #5c2dab;
+    }
+    .btn {
+      background-color: #7e57c2;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      margin: 10px 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    footer {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    .language-switch {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 600px;
+      display: block;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="language-switch">
+    <button onclick="toggleLanguage()">AR / EN</button>
+  </div>
+  <header>
+    <img src="Logo.png" alt="Broment Logo" />
+    <h1>Broment Token (BRM)</h1>
+    <p id="tagline">The future of stable and competitive cryptocurrency on the Polygon network.</p>
+    <nav>
+      <a href="#whitepaper">Whitepaper</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a href="#social">Social</a>
+      <a href="#swap">Swap</a>
+    </nav>
+  </header>  <section id="whitepaper">
+    <h2>Whitepaper</h2>
+    <p>Learn all the technical and strategic details behind Broment Token.</p>
+    <a href="/whitepaper.pdf" class="btn" download>Download Whitepaper</a>
+  </section>  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <p><strong>What is BRM?</strong> BRM is a decentralized token on the Polygon blockchain.</p>
+    <p><strong>How can I buy BRM?</strong> You can purchase BRM through QuickSwap using MATIC.</p>
+    <p><strong>Is there a total supply limit?</strong> Yes, total supply is 1,000,000 BRM.</p>
+  </section>  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:broment@hotmail.com">broment@hotmail.com</a></p>
+  </section>  <section id="social">
+    <h2>Follow Us</h2>
+    <a class="btn" href="https://x.com/broment" target="_blank">X (Twitter)</a>
+    <a class="btn" href="https://t.me/broment" target="_blank">Telegram</a>
+  </section>  <section id="swap">
+    <h2>Swap BRM</h2>
+    <p>You can trade BRM tokens using QuickSwap directly below:</p>
+    <iframe src="https://quickswap.exchange/#/swap?outputCurrency=0x72c695d7362383e3d8189899bce6317ddacbec69&chainId=137"></iframe>
+  </section>  <footer>
+    &copy; 2025 Broment. All rights reserved.
+  </footer>  <script>
+    function toggleLanguage() {
+      const tagline = document.getElementById("tagline");
+      if (tagline.innerText.includes("The future")) {
+        tagline.innerText = "مستقبل العملات الرقمية المستقرة والتنافسية على شبكة بوليغون";
+      } else {
+        tagline.innerText = "The future of stable and competitive cryptocurrency on the Polygon network.";
+      }
+    }
+  </script></body>
+</html>
